@@ -1,0 +1,634 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Mulish', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header section start */
+header {
+  margin-top: 60px;
+  max-width: 1440px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/* nav section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header {
+  display: flex;
+  gap: 10px;
+}
+.nav-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.travel-color {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+/* hamburger */
+.nav-menu label,
+#hamburger {
+  display: none;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 45px;
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #424247;
+  font-family: Mulish;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.nav-menu ul li:first-child a {
+  color: #ff5400;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* banner section */
+.banner-container {
+  margin-top: 50px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.banner-title {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.banner-desc {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.banner-form {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.where-go {
+  width: 20%;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  padding: 0px 20px;
+}
+#when {
+  width: 20%;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0px 20px;
+}
+#select-type {
+  width: 20%;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0px 20px;
+}
+.primary-btn,
+.read-btn {
+  width: 20%;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #ffffff;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0px 20px;
+  border: none;
+}
+
+main {
+  margin-top: 100px;
+  max-width: 1440px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/* popular tour  */
+.popular-tour-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.popular-tour-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.popular-tour-desc {
+  margin-bottom: 20px;
+}
+
+.popular-tour-desc ul {
+  padding-left: 30px;
+}
+.popular-tour-desc p {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 22px;
+}
+/* Choose Your Destination */
+
+.destination-container {
+  margin-top: 100px;
+}
+.destination-title {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.destination-desc {
+  margin: 20px auto;
+  width: 45%;
+  text-align: justify;
+  text-align-last: center;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.destination-images img {
+  width: 100%;
+}
+
+.destination-images {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    "m  m   m   m   m   m   i   i   i   i   i   i"
+    "s  s   s   s   n   n   n   n   n   k   k   k"
+    "bd bd  bd  bd  bd  bn  bn  bn  bn  bn  bn  bn";
+  gap: 20px;
+}
+
+.maldives {
+  grid-area: m;
+  position: relative;
+}
+.indonesia {
+  grid-area: i;
+  position: relative;
+}
+.srilanka {
+  grid-area: s;
+  position: relative;
+}
+
+.north-america {
+  grid-area: n;
+  position: relative;
+}
+
+.kashmir {
+  grid-area: k;
+  position: relative;
+}
+
+.bangladesh {
+  grid-area: bd;
+  position: relative;
+}
+
+.bandarban {
+  grid-area: bn;
+  position: relative;
+}
+.country {
+  position: absolute;
+  bottom: 45%;
+  left: 40%;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+/* Why choose US */
+.choose-us-container {
+  margin-top: 100px;
+}
+.choose-us-title {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.choose-us-desc {
+  margin: 20px auto;
+  width: 45%;
+  text-align: justify;
+  text-align-last: center;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.card-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas:
+    "h    h   h   h   h   h   w   w   w   w   w   w"
+    ".    .   .   b   b   b   b   b   b   .   .   .";
+
+  gap: 20px;
+}
+.hand-pick {
+  background: #fbb56333;
+  grid-area: h;
+  border-radius: 16px;
+  padding: 50px;
+}
+
+.world-class {
+  background: #29cef633;
+  grid-area: w;
+  border-radius: 16px;
+  padding: 50px;
+}
+
+.best-price {
+  background: #e9444433;
+  grid-area: b;
+  border-radius: 16px;
+  padding: 50px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.common-card-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.common-card-desc {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* Deals & Discounts */
+
+.deals-discounts-container {
+  margin-top: 100px;
+}
+
+.deal-discounts-title {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.deals-discounts-desc {
+  margin: 20px auto;
+  width: 45%;
+  text-align: justify;
+  text-align-last: center;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.deals-discount-img-container img {
+  width: 100%;
+}
+.img1 {
+  margin-top: 40px;
+  position: relative;
+}
+
+.img2 {
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: -20px;
+}
+/* tour description and packages */
+
+.tour-description-container {
+  width: 40%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  position: absolute;
+  bottom: 16%;
+  left: 700px;
+  padding: 50px;
+}
+
+.tour-description-container-for-img-2 {
+  width: 40%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  position: absolute;
+  bottom: 16%;
+  right: 700px;
+  padding: 50px;
+}
+.icon-t {
+  padding-right: 5px;
+  color: #ff5400;
+}
+.space {
+  padding-right: 15px;
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* .tour-title, .tour-desc,.price,.book-now*/
+.tour-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.tour-desc {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.price {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.book-now {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 15px;
+  border: none;
+  margin-top: 20px;
+}
+.see-package {
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 10px auto 90px auto ;
+  display: block;
+  border: none;
+}
+.simple-perfect-desc ul{
+    padding-left: 30px;
+}
+
+footer {
+  margin-top: 100px;
+  max-width: 1440px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* media queries for mobile */
+
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* width: 89%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px; */
+
+  header {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  main {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  nav,
+  .nav-menu ul,
+  .banner-form,
+  .popular-tour-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  nav {
+    width: 100%;
+  }
+  .nav-menu ul li {
+    display: block;
+    width: 100%;
+  }
+  /* hamburger */
+  .nav-menu label {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 1.35rem;
+  }
+  .nav-menu ul {
+    display: none;
+  }
+  .nav-menu input:checked ~ .nav-menu ul {
+    display: block;
+  }
+  /* hamburger end */
+
+  .nav-header {
+    position: relative;
+    left: -30px;
+  }
+
+  .banner-container {
+    width: 89%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 800px;
+  }
+  .banner-form,
+  .banner-desc {
+    width: 90%;
+  }
+
+  .where-go,
+  #when,
+  #select-type,
+  .primary-btn {
+    width: 100%;
+  }
+
+  .popular-tour-container,
+  .destination-container,
+  .choose-us-container,
+  .deals-discounts-container {
+    width: 89%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .popular-tour-img {
+    width: 100%;
+  }
+  .popular-tour-img img {
+    width: 100%;
+  }
+  .read-btn {
+    width: 50%;
+  }
+
+  .destination-desc,
+  .choose-us-desc,
+  .deals-discounts-desc {
+    width: 100%;
+  }
+
+  .destination-images {
+    grid-template-areas:
+      "m"
+      "i"
+      "s"
+      "n"
+      "k"
+      "bd"
+      "bn";
+  }
+
+  .country {
+    position: absolute;
+    bottom: 45%;
+    left: 30%;
+    color: #fff;
+    font-family: Mulish;
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-areas:
+      "h"
+      "w"
+      "b";
+
+    gap: 20px;
+  }
+  .deals-discount-img-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img1,
+  .img2 {
+    height: 500px;
+  }
+  .tour-description-container,
+  .tour-description-container-for-img-2 {
+    width: 90%;
+    bottom: 2%;
+    left: 4.75%;
+    padding: 25px;
+  }
+  .tour-title,
+  .tour-desc,
+  .price,
+  .book-now {
+    margin-top: 8px;
+  }
+}
