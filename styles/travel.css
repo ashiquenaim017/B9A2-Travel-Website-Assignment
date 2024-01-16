@@ -742,15 +742,16 @@ footer {
   }
   .travel {
    
-    width: 70%;
-    bottom: 22%;
-    left: 28%;
-    padding: 5px;
+    width: 40%;
+    bottom: 20%;
+    left: 55%;
+    padding:10px;
+    rotate: -35deg;
   }
   .travel p{
         font-size: 1rem;
   }
-  .travel p h3{
+  .travel h3{
            font-size: 1rem;
   }
 
