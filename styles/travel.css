@@ -599,6 +599,12 @@ footer {
   font-size: 2.25rem;
   font-weight: 800;
 }
+.footer-travel-color{
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
 .footer-desc {
   color: #5a5a5d;
   font-family: Mulish;
@@ -807,11 +813,11 @@ footer {
   .footer-container {
     width: 100%;
   }
-  .footer-title,.travel-color{
-    font-size: 1.375rem;
-    
-  }
   .footer-header img{
-    height:31.516px
+    height: 34px;
+  }
+  
+  .footer-title,.footer-travel-color{
+    font-size: 1.375rem;
   }
 }
