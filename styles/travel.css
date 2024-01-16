@@ -584,7 +584,7 @@ footer {
      justify-content: center;
      align-items: center;
      gap: 50px;
-     padding-bottom: 50px;
+     
   
 }
 
@@ -813,6 +813,7 @@ footer {
   }
   .footer-container {
     width: 100%;
+    padding-bottom: 50px;
   }
   .footer-header img{
     height: 34px;
